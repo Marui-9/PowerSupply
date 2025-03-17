@@ -5,6 +5,186 @@
 	(uuid "48b417af-2833-42bb-a4bb-bdc5fe4a27b1")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:IEC_60320_C14_Receptacle"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.842 8.636 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "IEC_60320_C14_Receptacle"
+				(at 0 -9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -2.286 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -2.286 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "C14 Plug, 10A max"
+				(at -0.635 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Plug C14 IEC320"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C*14*Receptacle*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IEC_60320_C14_Receptacle_1_1"
+				(rectangle
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 -6.35) (xy -5.334 -5.842) (xy -5.334 5.842) (xy -4.826 6.35) (xy 0.254 6.35) (xy 2.794 3.81)
+						(xy 2.794 -3.81) (xy 0.254 -6.35) (xy -4.826 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.937 -3.302)
+					(end -1.397 -4.318)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.81 4.318)
+					(end -1.27 3.302)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 0.508)
+					(end 2.032 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin power_in line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "PE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Battery"
 			(pin_numbers
 				(hide yes)
@@ -218,6 +398,428 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Display_Character:SA15-11EWA"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SA15-11EWA"
+				(at 0 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Display_7Segment:SA15-11xxx"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/SA15-11EWA.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "High Efficiency Red Single-digit Numeric Display with white white diffused lens, common anode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "display LED 7-segment"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SA15?11*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SA15-11EWA_1_0"
+				(text "E"
+					(at -2.54 3.048 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "F"
+					(at -2.286 6.096 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "D"
+					(at -0.254 2.286 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "G"
+					(at 0 5.334 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "A"
+					(at 0.254 6.858 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "C"
+					(at 2.286 3.048 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "B"
+					(at 2.54 6.096 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "DP"
+					(at 3.556 1.524 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(symbol "SA15-11EWA_1_1"
+				(rectangle
+					(start -5.08 12.7)
+					(end 5.08 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 4.064) (xy -1.778 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 7.112) (xy -1.524 5.08)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy 0.762 1.524)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 4.572) (xy 1.016 4.572)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 7.62) (xy 1.27 7.62)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.064) (xy 1.27 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 7.112) (xy 1.524 5.08)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.524) (xy 2.54 1.524)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -7.62 7.62 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 5.08 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -7.62 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -10.16 0)
+					(length 2.54)
+					(name "DP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -7.62 180)
+					(length 2.54)
+					(name "CA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -10.16 180)
+					(length 2.54)
+					(name "CA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -877,6 +1479,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_DIP_x01"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DIP_x01"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dip switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW?DIP?x1*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DIP_x01_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.127) (xy 2.3622 1.1684)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DIP_x01_0_1"
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SW_DIP_x01_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -991,7 +1751,7 @@
 	)
 	(text "Symbolic 36DC/230AC"
 		(exclude_from_sim no)
-		(at 132.08 72.644 0)
+		(at 131.318 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1000,19 +1760,19 @@
 		(uuid "ccfb57dc-ea07-49fa-a12f-a954eba9f675")
 	)
 	(junction
-		(at 107.95 85.09)
+		(at 132.08 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1452bc8f-e55a-48c7-8dd0-77dbbdf8487b")
+	)
+	(junction
+		(at 107.95 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b5c69a7-3c2e-47d1-9ccc-cc7ad78023d7")
 	)
 	(junction
-		(at 62.23 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "432950a8-d885-4262-8e93-2e664e9306c6")
-	)
-	(junction
-		(at 55.88 85.09)
+		(at 55.88 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46bea3c4-2622-4d4b-bc57-d39c40e459f8")
@@ -1029,6 +1789,12 @@
 		(color 0 0 0 0)
 		(uuid "dae6ca61-f057-43f6-a1a2-e5e11e8e1511")
 	)
+	(junction
+		(at 62.23 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8d70dc9-105c-46f0-854f-d5ffc9c9051d")
+	)
 	(wire
 		(pts
 			(xy 107.95 44.45) (xy 107.95 49.53)
@@ -1041,6 +1807,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 121.92) (xy 132.08 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11441b69-57a4-429b-ad91-fe04fad1f898")
+	)
+	(wire
+		(pts
 			(xy 120.65 45.72) (xy 124.46 45.72)
 		)
 		(stroke
@@ -1048,16 +1824,6 @@
 			(type default)
 		)
 		(uuid "1ddb5707-2f56-47a9-8dd8-6fa2739d78d3")
-	)
-	(wire
-		(pts
-			(xy 55.88 54.61) (xy 87.63 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2027497b-1f5c-4cb4-81b2-7ae6b4994285")
 	)
 	(wire
 		(pts
@@ -1091,7 +1857,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 44.45) (xy 62.23 74.93)
+			(xy 62.23 44.45) (xy 62.23 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1121,13 +1887,33 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 74.93) (xy 124.46 74.93)
+			(xy 62.23 111.76) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "559974ba-a0b7-4467-b43b-15e82a88fec7")
+	)
+	(wire
+		(pts
+			(xy 43.18 44.45) (xy 46.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55f53aec-9eac-43cd-8be6-e970a20e1ea6")
+	)
+	(wire
+		(pts
+			(xy 55.88 54.61) (xy 87.63 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e353e27-7085-4c10-a5fd-576446de0292")
 	)
 	(wire
 		(pts
@@ -1141,7 +1927,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 85.09) (xy 132.08 85.09)
+			(xy 107.95 121.92) (xy 132.08 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1151,7 +1937,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 92.71) (xy 55.88 85.09)
+			(xy 55.88 129.54) (xy 55.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1161,7 +1947,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 85.09) (xy 107.95 85.09)
+			(xy 149.86 113.03) (xy 149.86 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bbeeeb6-4eca-4673-b9bd-5de2be20abed")
+	)
+	(wire
+		(pts
+			(xy 55.88 121.92) (xy 107.95 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1171,7 +1967,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 85.09) (xy 55.88 85.09)
+			(xy 43.18 121.92) (xy 55.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1201,7 +1997,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 64.77) (xy 43.18 85.09)
+			(xy 43.18 64.77) (xy 43.18 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1211,7 +2007,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 85.09) (xy 107.95 66.04)
+			(xy 107.95 66.04) (xy 107.95 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1221,13 +2017,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 44.45) (xy 62.23 44.45)
+			(xy 146.05 107.95) (xy 156.21 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ba76f77a-980e-4c1c-8739-39edca3d41a8")
+		(uuid "bf479e09-41be-41a7-bd3c-4156ea1bdd5b")
 	)
 	(wire
 		(pts
@@ -1241,13 +2037,43 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 54.61) (xy 55.88 85.09)
+			(xy 146.05 115.57) (xy 146.05 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e45976fd-eba7-40f5-b3fc-5a7a6e08f673")
+	)
+	(wire
+		(pts
+			(xy 156.21 113.03) (xy 149.86 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea409607-bcbb-4b23-a9c1-ee38a52f83ec")
+	)
+	(wire
+		(pts
+			(xy 55.88 54.61) (xy 55.88 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ebf60453-2618-455e-a45c-f9cfb884f083")
+	)
+	(wire
+		(pts
+			(xy 139.7 115.57) (xy 146.05 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87bca5c-38f1-491f-9e87-40de51085664")
 	)
 	(symbol
 		(lib_id "Device:Battery")
@@ -1314,6 +2140,98 @@
 			(project ""
 				(path "/48b417af-2833-42bb-a4bb-bdc5fe4a27b1"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Display_Character:SA15-11EWA")
+		(at 130.81 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "456f94a5-59d5-4ad6-8731-7cfd501333f1")
+		(property "Reference" "U3"
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SA15-11EWA"
+			(at 130.81 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Display_7Segment:SA15-11xxx"
+			(at 130.81 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/SA15-11EWA.pdf"
+			(at 130.81 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Efficiency Red Single-digit Numeric Display with white white diffused lens, common anode"
+			(at 130.81 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "06844626-b51d-4351-8b3e-e6859a4fd8b8")
+		)
+		(pin "7"
+			(uuid "18b21c78-9ea9-4470-aef9-a1e1bc1b17f1")
+		)
+		(pin "6"
+			(uuid "43a7001b-e686-49df-855e-5bd08e2692ac")
+		)
+		(pin "8"
+			(uuid "381df467-9aed-48f9-8820-2700c36c4c86")
+		)
+		(pin "5"
+			(uuid "17153216-fe47-4007-9a80-37be134a2110")
+		)
+		(pin "4"
+			(uuid "906d495f-e703-4a3a-a7ba-ac5221fb45df")
+		)
+		(pin "3"
+			(uuid "24e153c5-0530-45e5-8810-082643b52728")
+		)
+		(pin "2"
+			(uuid "3d19b388-af6c-4557-8887-6a87d7e8d438")
+		)
+		(pin "9"
+			(uuid "ccbc7c3b-f479-4a87-b0d5-15c3a28073ea")
+		)
+		(pin "1"
+			(uuid "56b23a6e-36b3-4804-97a9-14617e2b4a1a")
+		)
+		(instances
+			(project ""
+				(path "/48b417af-2833-42bb-a4bb-bdc5fe4a27b1"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -1406,7 +2324,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Switching:TPS61099DRV")
-		(at 132.08 80.01 0)
+		(at 132.08 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1414,7 +2332,7 @@
 		(dnp no)
 		(uuid "5e7205cc-bf7e-49b2-946e-5acfd604db8b")
 		(property "Reference" "U2"
-			(at 132.08 68.58 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1422,7 +2340,7 @@
 			)
 		)
 		(property "Value" "TPS61099DRV"
-			(at 132.08 70.358 0)
+			(at 132.08 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,7 +2348,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
-			(at 133.35 83.82 0)
+			(at 133.35 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1441,7 +2359,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/TPS61099"
-			(at 132.08 77.47 0)
+			(at 132.08 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1450,7 +2368,7 @@
 			)
 		)
 		(property "Description" "Boost Converter, 0.7-5.5V Input Voltage, 1A Switch Current, Adjustable 1.8-5.5V Output Voltage, WSON-6"
-			(at 132.08 80.01 0)
+			(at 132.08 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1483,6 +2401,147 @@
 			(project ""
 				(path "/48b417af-2833-42bb-a4bb-bdc5fe4a27b1"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:IEC_60320_C14_Receptacle")
+		(at 165.1 113.03 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70b1620b-4faf-459d-86f2-81d0b4155036")
+		(property "Reference" "J1"
+			(at 172.72 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "IEC_60320_C14_Receptacle"
+			(at 172.72 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.386 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.386 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "C14 Plug, 10A max"
+			(at 165.735 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2c107a6-78e9-49b6-8d19-4c8660b9f857")
+		)
+		(pin "1"
+			(uuid "b241738d-3da1-4a71-8bd7-c27871aeace3")
+		)
+		(pin "3"
+			(uuid "15b6a276-6dcb-49d3-a9f6-89bad46dfbb0")
+		)
+		(instances
+			(project ""
+				(path "/48b417af-2833-42bb-a4bb-bdc5fe4a27b1"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 54.61 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8a0f9f9-ef6b-434e-a109-100d32495b60")
+		(property "Reference" "SW1"
+			(at 54.61 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 54.61 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b434aaf1-0608-4f00-9d64-986e04b1e3df")
+		)
+		(pin "2"
+			(uuid "4bb244e6-960a-4f4b-80fc-d6b5ec65c49a")
+		)
+		(instances
+			(project ""
+				(path "/48b417af-2833-42bb-a4bb-bdc5fe4a27b1"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -1560,7 +2619,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 92.71 0)
+		(at 55.88 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1569,7 +2628,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffd880d8-109b-4f26-874d-333506fc73b4")
 		(property "Reference" "#PWR01"
-			(at 55.88 99.06 0)
+			(at 55.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1578,7 +2637,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 97.79 0)
+			(at 55.88 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1586,7 +2645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 92.71 0)
+			(at 55.88 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,7 +2654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 92.71 0)
+			(at 55.88 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1604,7 +2663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 92.71 0)
+			(at 55.88 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
